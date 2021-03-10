@@ -1,0 +1,60 @@
+.header__top {
+  padding: 20px 0 20px 0;
+}
+
+.currency-menu {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+  height: 100%;
+
+  &:hover {
+    cursor: pointer;
+    .currency-menu__choice {
+      display: block;
+    }
+  }
+}
+
+.currency-menu__value {
+  margin-right: 8px;
+  width: 28px;
+}
+
+.currency-menu__choice {
+  display: none;
+  position: absolute;
+  width: 140px;
+
+  top: 5px;
+  left: -126px;
+}
+
+.currency-menu__button {
+  display: inline;
+  padding: 5px;
+  color: #444444;
+  font-size: 14px;
+  font-family: "Kaspersky Sans";
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #00a88e;
+    color: #fff;
+  }
+}
+
+.logo--heading {
+  color: #00a88e;
+  font-size: 64.5px;
+  font-weight: 700;
+}
+
+.logo--energizer {
+  font-family: "Kaspersky Sans";
+
+  color: #282422;
+  font-size: 64.5px;
+  font-style: italic;
+}

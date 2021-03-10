@@ -1,0 +1,25 @@
+.header__main {
+  padding: 35px 0 214px 0;
+  overflow: hidden;
+  border-top: 1px solid #f2f2f2;
+}
+
+.header__heading {
+  margin-bottom: 35px;
+}
+
+.header__img {
+  position: absolute;
+  z-index: -2;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.header__img--absolute {
+  position: absolute;
+  top: -106px;
+  right: -430px;
+  z-index: -2;
+}
