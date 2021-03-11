@@ -11,6 +11,7 @@ header.header
                         .currency-menu__choice
                             button.currency-menu__button GBP
                             button.currency-menu__button USD
+                            button.currency-menu__button EUR
                             button.currency-menu__button RUR
     section.header__main
         .container
@@ -19,8 +20,10 @@ header.header
             h1.header__heading
                 span.logo--heading kaspersky 
                 span.logo--energizer
-                    span.amp &amp; 
+                    span.logo--amp &amp; 
                     | Energizer
+                    span.logo--reg
+                        sub &reg;
             article.header__article
                 h3.article__heading
                     | Enjoy 20$ free and save up to 60%
@@ -40,28 +43,18 @@ header.header
                 .poduct-card__top
                     .poduct-card__heading
                         .row.align-left
-                            .card__img-wrapper
-                                img(src="./img/icons/icon_internet_security_for_windows.svg" alt="internet_security_for_windows" width="70px")
-                            .card__title
-                                .card__title--logo Kaspersky
-                                p Internet Security
-                                .row.align-left
-                                    .card__img-wrapper.stars-wrapper
-                                        img(src="./img/icons/icon_star.svg" alt="stars" width="100px")
-                                    p.card__reviews (1503 reviews)
+                            +card-icon('icon_internet_security_for_windows.svg', '70px')
+                            +card-title
+                                | Internet Security
                     .poduct-card__description
-                        .row.align-left.align-top
-                            .card__img-wrapper
-                                img(src="./img/icons/icon_check.svg" alt="icon_check" width="30px")
-                            p.poduct-card__text Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
-                        .row.align-left.align-top
-                            .card__img-wrapper
-                                img(src="./img/icons/icon_check.svg" alt="icon_check" width="30px")
-                            p.poduct-card__text Includes Webcam Protection, Safe Money Browser &amp; free VPN
-
-
-
-
-
-
-
+                        +card-desc
+                            | Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
+                        +card-desc
+                            | Includes Webcam Protection, Safe Money Browser &amp; free VPN
+                    .user-count
+                        p.user-count__text 2 User accounts 
+                        .tip-icon
+                            img(src="./img/icons/icon_info.svg" alt="icon_info")
+                            p.tip-text Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                                
+                .poduct-card__bottom

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Kaspersky Sans", serif;
+  src: local("Kaspersy Sans"),
+    url("KasperskySans-Regular.woff2") format("woff2"),
+    url("KasperskySans-Regular.ttf") format("ttf"),
+    url("KasperskySans-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kaspersky Sans", serif;
+  src: local("Kaspersky Sans"),
+    url("KasperskySans-Light.woff2") format("woff2"),
+    url("KasperskySans-Light.ttf") format("ttf"),
+    url("KasperskySans-Light.eot") format("eot");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kaspersky Sans", serif;
+  src: local("Kaspersky Sans"),
+    url("KasperskySans-Bold.woff2") format("woff2"),
+    url("KasperskySans-Bold.ttf") format("ttf"),
+    url("KasperskySans-Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+}
