@@ -13,17 +13,17 @@
     <header class="header">
       <section class="header__top">
         <div class="container">
-          <div class="row"><a class="logo" href="index.html">kaspersky</a>
+          <div class="row"><a class="logo" href="https://www.kaspersky.ru/" target="_blank">kaspersky</a>
             <div class="currency-menu">
               <div class="row">
                 <div class="currency-menu__value">GBP</div>
                 <div class="arrow-select"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
-                <div class="currency-menu__choice">
-                  <button class="currency-menu__button">GBP</button>
-                  <button class="currency-menu__button">USD</button>
-                  <button class="currency-menu__button">EUR</button>
-                  <button class="currency-menu__button">RUR</button>
-                </div>
+                <ul class="currency-menu__list">
+                  <li class="currency-menu__item">GBP</li>
+                  <li class="currency-menu__item">USD</li>
+                  <li class="currency-menu__item">EUR</li>
+                  <li class="currency-menu__item">RUR</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@
                     <p>Internet Security
                     </p>
                     <div class="row align-left">
-                      <div class="card__img-wrapper stars-wrapper"><img src="./img/icons/icon_star.svg" alt="img" width="100px"/></div>
-                      <p class="card__reviews">(1503 reviews)</p>
+                      <div class="card__img-wrapper stars-wrapper"><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/></div>
+                      <p class="card__reviews">1503 reviews</p>
                     </div>
                   </div>
                 </div>
@@ -73,13 +73,51 @@
                 </div>
               </div>
               <div class="user-count">
-                <p class="user-count__text">2 User accounts </p>
-                <div class="tip-icon"><img src="./img/icons/icon_info.svg" alt="icon_info"/>
-                  <p class="tip-text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.</p>
+                <p class="user-count__text">2 User accounts</p>
+                <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                  <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="poduct-card__bottom"></div>
+            <div class="poduct-card__bottom">
+              <div class="menu-plan">
+                <div class="menu-plan__text">Choose your plan:</div>
+                <div class="row menu-plan__wrapper">
+                  <div class="row menu-plan__value no-mouse-event"></div>
+                  <ul class="menu-plan__list">
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">5 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="39.99">$39.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">4 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="29.99">$29.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">3 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="19.99">$19.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">2 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="9.99">$9.99</div>
+                    </li>
+                  </ul>
+                  <div class="arrow-select no-mouse-event"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
+                </div>
+              </div>
+              <div class="poduct-card__discount">
+                <p>Protect more devices</p>
+                <div class="poduct-card__discount-value"></div>
+                <div class="row align-center">
+                  <div class="poduct-card__prise-disabled"></div>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

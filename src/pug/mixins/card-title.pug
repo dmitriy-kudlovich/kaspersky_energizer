@@ -1,9 +1,14 @@
-mixin card-title(logo="Kaspersky", img="icon_star.svg", width="100px", count="1503")
+mixin card-title(logo="Kaspersky", img="icon_star.svg", width="14.98px", count="1503")
     .card__title
         .card__title--log= logo
         p
             block
         .row.align-left
             .card__img-wrapper.stars-wrapper
-                img(src="./img/icons/"+img  alt="img" width= width)
-            p.card__reviews (#{count} reviews)
+                img(src="./img/icons/"+img  alt="img" width= width class="icon_star")
+                img(src="./img/icons/"+img  alt="img" width= width class="icon_star")
+                img(src="./img/icons/"+img  alt="img" width= width class="icon_star")
+                img(src="./img/icons/"+img  alt="img" width= width class="icon_star")
+                img(src="./img/icons/"+img  alt="img" width= width class="icon_star")
+            p.card__reviews #{count} 
+                | reviews

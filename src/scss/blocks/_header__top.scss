@@ -4,15 +4,14 @@
 
 .currency-menu {
   position: relative;
-  display: inline-block;
   padding: 10px 0 10px 0;
   font-size: 14px;
   font-weight: 700;
 
   &:hover {
     cursor: pointer;
-    .currency-menu__choice {
-      display: block;
+    .currency-menu__list {
+      display: flex;
     }
   }
 }
@@ -22,25 +21,34 @@
   width: 28px;
 }
 
-.currency-menu__choice {
+.currency-menu__list {
   display: none;
+  align-items: center;
   position: absolute;
-  width: 170px;
-
-  top: 5px;
-  left: -165px;
+  left: -158px;
+  width: 158px;
 }
 
-.currency-menu__button {
-  display: inline;
+.currency-menu__item {
+  position: relative;
   padding: 5px;
   color: #444444;
   font-size: 14px;
   font-family: "Kaspersky Sans";
   transition: all 0.2s ease-in;
 
-  &:hover {
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    width: 30px;
+    height: 3px;
     background-color: #00a88e;
-    color: #fff;
+  }
+
+  &:hover::after {
+    display: block;
   }
 }

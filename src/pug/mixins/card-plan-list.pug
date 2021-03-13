@@ -1,0 +1,21 @@
+mixin card-plan-list(text="Choose your plan:")
+    .menu-plan
+        .menu-plan__text= text
+        .row.menu-plan__wrapper
+            //- Текущее значение списка
+            .row.menu-plan__value.no-mouse-event
+            ul.menu-plan__list
+                li.row.align-left.menu-plan__list-item
+                    .menu-plan__name 5 Devices, 1 Year
+                    .menu-plan__prise(data-prise="39.99") $39.99
+                li.row.align-left.menu-plan__list-item
+                    .menu-plan__name 4 Devices, 1 Year
+                    .menu-plan__prise(data-prise="29.99") $29.99
+                li.row.align-left.menu-plan__list-item
+                    .menu-plan__name 3 Devices, 1 Year
+                    .menu-plan__prise(data-prise="19.99") $19.99
+                li.row.align-left.menu-plan__list-item
+                    .menu-plan__name 2 Devices, 1 Year
+                    .menu-plan__prise(data-prise="9.99") $9.99
+            .arrow-select.no-mouse-event
+                img(src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px")

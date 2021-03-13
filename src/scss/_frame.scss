@@ -1,0 +1,25 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.no-mouse-event {
+  pointer-events: none;
+}
