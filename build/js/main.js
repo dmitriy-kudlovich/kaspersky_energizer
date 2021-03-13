@@ -7,6 +7,8 @@ const currency = document.querySelectorAll(".currency-menu__item");
 const html = document.querySelector("html");
 // Карточка продукта
 const productCard = document.querySelectorAll(".poduct-card");
+// Все списки с ценами
+const menuPlan = document.querySelectorAll(".menu-plan");
 // Блок, в котором находится выпадающий список
 const planButton = document.querySelectorAll(".menu-plan__wrapper");
 // Выбранный план подписки
@@ -14,7 +16,7 @@ const planValue = document.querySelectorAll(".menu-plan__value");
 // Список с ценами
 const planList = document.querySelectorAll(".menu-plan__list");
 // Элемент списка
-const plan = document.querySelectorAll(".menu-plan__list-item");
+const planListItem = document.querySelectorAll(".menu-plan__list-item");
 // Цена подписки (из элемента списка)
 const planPrise = document.querySelectorAll(".menu-plan__prise");
 // Скидка
@@ -40,6 +42,11 @@ function menuList(value, listItem) {
 }
 menuList(currencyValue, currency);
 
+// Присвоение data-атрибута каждому выпадающему списку цен
+for (let i = 0; i < planList.length; i++) {
+  planList[i].setAttribute("data-counter", i);
+}
+
 // Функция выпадающего меню плана
 function planListActive() {
   planButton.forEach((item, index) => {
@@ -54,12 +61,14 @@ function planListActive() {
         });
       }
     });
+
+    
   });
 }
 planListActive();
 
-// Функция выбора плана
-function menuPlan(value, listItem) {
+// Функция выбора плана подписки
+function menuPlanChoice(value, listItem) {
   // Получение цены, скидки и цены без скидки плана подписки, выбранного по умолчанию:
   let price = Number(planPrise[0].getAttribute("data-prise"));
   let discount = Math.round(price * 0.5);
@@ -100,7 +109,8 @@ function menuPlan(value, listItem) {
       let oldPrice = Number((price + discount).toFixed(2));
 
       // Вывод значений на экран
-      for (let i = 0; i < productCard.length; i++) {
+      let aimList = item.parentNode.getAttribute("data-counter"); // Получаем data-атрибут (цифровое значение) выпадающего списка, на котором произошло событие
+      for (let i = aimList; i <= aimList; i++) {
         value[i].innerHTML = item.innerHTML;
         poductDiscountValue[i].innerHTML = "$" + discount + " OFF";
         priseDisabled[i].innerHTML = "$" + oldPrice;
@@ -111,7 +121,7 @@ function menuPlan(value, listItem) {
     });
   });
 }
-menuPlan(planValue, plan);
+menuPlanChoice(planValue, planListItem);
 
 // Чек-бокс
 // Присвоение атрибутов id и for чекбоксам в карточках
@@ -121,6 +131,7 @@ for (let i = 0; i < cardCheckBoxes.length; i++) {
   cardCheckBoxesLabels[i].setAttribute("for", itemId);
 }
 
+// Переключение в карточках
 cardCheckBoxes.forEach((item, index) => {
   item.addEventListener("click", () => {
     cardCheckBoxes[index].classList.toggle("checkbox--checked");

@@ -8,7 +8,7 @@
   margin-right: 2px;
   width: 20px;
   height: 20px;
-  background-color: transparent;
+  cursor: pointer;
 
   &::after {
     visibility: visible;
@@ -35,4 +35,8 @@
   &::before {
     visibility: visible;
   }
+}
+
+.card__checkbox-lable {
+  cursor: pointer;
 }
