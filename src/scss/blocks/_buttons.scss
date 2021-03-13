@@ -1,0 +1,17 @@
+.button__buy {
+  padding: 24.5px 19px;
+  margin-bottom: 18px;
+  width: 312px;
+
+  background: #ff3748;
+  box-shadow: 0px 8px 34px rgba(255, 55, 72, 0.48);
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.1s ease-in;
+
+  &:hover {
+    background: darken($color: #ff3748, $amount: 15%);
+  }
+}

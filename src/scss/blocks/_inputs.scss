@@ -1,0 +1,38 @@
+.checkbox-wrapper {
+  position: relative;
+}
+
+.poduct-card__checkbox {
+  position: relative;
+  visibility: hidden;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+  &::after {
+    visibility: visible;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #00a88e;
+    border-radius: 4px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: url(../img/icons/icon_check-green.svg);
+    width: 16px;
+    z-index: 2;
+  }
+}
+
+.checkbox--checked {
+  &::before {
+    visibility: visible;
+  }
+}

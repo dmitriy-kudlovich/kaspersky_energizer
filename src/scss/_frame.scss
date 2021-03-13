@@ -20,6 +20,22 @@
   align-items: flex-start;
 }
 
+.align-bottom {
+  align-items: flex-end;
+}
+
 .no-mouse-event {
   pointer-events: none;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.margin--center {
+  margin: 0 auto;
 }

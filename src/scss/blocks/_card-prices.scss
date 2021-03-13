@@ -1,0 +1,40 @@
+.poduct-card__prises{
+  text-align: center;
+}
+
+.card__text--margin {
+  margin-bottom: 17px;
+}
+
+.poduct-card__discount-value {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff3748;
+}
+
+.poduct-card__prise--disabled {
+  margin-bottom: 13px;
+}
+
+.prise--disabled {
+  margin-right: 6px;
+  font-size: 20px;
+  text-decoration-line: line-through;
+  color: #999999;
+}
+
+.poduct-card__prise--chosen {
+  padding: 1px 0;
+  margin-bottom: 14px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #1d1d1b;
+}
+
+.card__prise--float {
+  display: block;
+  font-size: 32px;
+  line-height: 1;
+}

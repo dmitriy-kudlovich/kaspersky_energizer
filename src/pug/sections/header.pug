@@ -52,13 +52,20 @@ header.header
                         +card-description
                             | Includes Webcam Protection, Safe Money Browser &amp; free VPN
                     +card-user-count(2)
-                .poduct-card__bottom
+                .poduct-card__bottom.text--center
                     +card-plan-list
-                    .poduct-card__discount
-                        p Protect more devices
+                    .poduct-card__prises
+                        p.card__text--small.card__text--margin Protect more devices
                         .poduct-card__discount-value
-                        .row.align-center
-                            .poduct-card__prise-disabled
+                        .row.align-center.poduct-card__prise--disabled
+                            .prise--disabled
                             +card-tool-tip
                                 | Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-
+                        .row.align-center.align-top.poduct-card__prise--chosen
+                    button.button__buy Buy now
+                    .row.align-center.checkbox-wrapper
+                        input(type="checkbox" checked).poduct-card__checkbox.checkbox--checked
+                        label.row.align-center.card__checkbox-lable
+                            p.card__text--small Auto Renewal
+                            +card-tool-tip
+                                | Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
