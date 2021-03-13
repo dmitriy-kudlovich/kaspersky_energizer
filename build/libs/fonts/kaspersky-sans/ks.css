@@ -1,6 +1,7 @@
 @font-face {
-  font-family: "Kaspersky Sans", serif;
-  src: url("KasperskySans-Regular.woff2") format("woff2"),
+  font-family: "Kaspersky Sans";
+  src: local("Kaspersky Sans"),
+    url("KasperskySans-Regular.woff2") format("woff2"),
     url("KasperskySans-Regular.woff") format("woff"),
     url("KasperskySans-Regular.ttf") format("ttf"),
     url("KasperskySans-Regular.svg") format("svg"),
@@ -11,7 +12,7 @@
 
 @font-face {
   font-family: "Kaspersky Sans", serif;
-  src: url("KasperskySans-Light.woff") format("woff"),
+  src: local("Kaspersky Sans"), url("KasperskySans-Light.woff") format("woff"),
     url("KasperskySans-Light.ttf") format("ttf"),
     url("KasperskySans-Light.svg") format("svg"),
     url("KasperskySans-Light.eot") format("eot");
@@ -21,7 +22,7 @@
 
 @font-face {
   font-family: "Kaspersky Sans", serif;
-  src: url("KasperskySans-Bold.woff") format("woff"),
+  src: local("Kaspersky Sans"), url("KasperskySans-Bold.woff") format("woff"),
     url("KasperskySans-Bold.ttf") format("ttf"),
     url("KasperskySans-Bold.svg") format("svg"),
     url("KasperskySans-Bold.eot") format("eot");
