@@ -1,6 +1,6 @@
 header.header
     // Верхняя часть шапки
-    section.header__top
+    .header__top
         .container
             .row
                 // Логотип
@@ -10,14 +10,14 @@ header.header
                     .row.block--active
                         .currency-menu__value.block--active GBP
                         .arrow-select
-                            img(src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px").block--active
+                            img(src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="10" height="6").block--active
                         ul.currency-menu__list
                             li.currency-menu__item GBP
                             li.currency-menu__item USD
                             li.currency-menu__item EUR
                             li.currency-menu__item RUR
     // Блок шапки с текстом
-    section.header__main
+    .header__main
         .container
             .img-wrapper
                 img(src="./img/bg/header-bg.png" alt="energizer-pic").header__img--absolute
@@ -34,8 +34,7 @@ header.header
                     br
                     | on your online security
                 p.header__text Whatever you need to protect – your PC 
-                    span.amp &amp;
-                    nbsp
+                    span.amp &amp; 
                     | mobile devices or your family’s entire digital world – we’ve got the security solutions you need. Our premium solutions are all Android compatible to make sure your mobile is as safe as your PC or laptops. 
                 p.header__text Select the solution that fits best your needs, click on “Buy now”, fill in your personal code received by email in the cart, your discount will apply.
 
