@@ -54,6 +54,27 @@
   font-size: 20px;
 }
 
+.header__desc {
+  width: 765px;
+}
+
+.desc__heading {
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #1d1d1b;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background-color: #444444;
+  }
+}
+
 .header__text {
   margin-bottom: 35px;
   font-size: 21px;

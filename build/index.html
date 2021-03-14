@@ -3,21 +3,24 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Главная</title>
+    <title>Kaspesky &amp; Energizer</title>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="libs/fonts/casper/casper.css"/>
     <link rel="stylesheet" href="libs/fonts/kaspersky-sans/ks.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon"/>
   </head>
   <body>
     <header class="header">
+      <!-- Верхняя часть шапки-->
       <section class="header__top">
         <div class="container">
-          <div class="row"><a class="logo" href="https://www.kaspersky.ru/" target="_blank">kaspersky</a>
+          <div class="row">
+            <!-- Логотип--><a class="logo" href="https://www.kaspersky.ru/" target="_blank">kaspersky</a>
+            <!-- Выпадающее меню для выбора валюты-->
             <div class="currency-menu">
-              <div class="row">
-                <div class="currency-menu__value">GBP</div>
-                <div class="arrow-select"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
+              <div class="row block--active">
+                <div class="currency-menu__value block--active">GBP</div>
+                <div class="arrow-select"><img class="block--active" src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
                 <ul class="currency-menu__list">
                   <li class="currency-menu__item">GBP</li>
                   <li class="currency-menu__item">USD</li>
@@ -29,200 +32,307 @@
           </div>
         </div>
       </section>
+      <!-- Блок шапки с текстом-->
       <section class="header__main">
         <div class="container">
           <div class="img-wrapper"><img class="header__img--absolute" src="./img/bg/header-bg.png" alt="energizer-pic"/></div>
           <h1 class="header__heading"><span class="logo--heading">kaspersky </span><span class="logo--energizer"><span class="logo--amp">&amp; </span>Energizer<span class="logo--reg"><sub>&reg;</sub></span></span></h1>
-          <article class="header__article">
-            <h3 class="article__heading">Enjoy 20$ free and save up to 60%<br/>on your online security</h3>
+          <div class="header__desc">
+            <h3 class="desc__heading">Enjoy 20$ free and save up to 60%<br/>on your online security</h3>
             <p class="header__text">Whatever you need to protect – your PC <span class="amp">&amp;</span>
               <nbsp></nbsp>mobile devices or your family’s entire digital world – we’ve got the security solutions you need. Our premium solutions are all Android compatible to make sure your mobile is as safe as your PC or laptops. 
             </p>
             <p class="header__text">Select the solution that fits best your needs, click on “Buy now”, fill in your personal code received by email in the cart, your discount will apply.</p><a class="link--green" href="#!">Terms &amp; Conditions</a>
-          </article>
-        </div>
-      </section>
-      <section class="poduct-cards">
-        <div class="container">
-          <div class="row align-center">
-            <div class="poduct-card">
-              <div class="poduct-card__top">
-                <div class="poduct-card__heading">
-                  <div class="row align-left">
-                    <div class="card__img-wrapper"><img src="./img/icons/icon_internet_security_for_windows.svg" alt="icon_internet_security_for_windows.svg" width="70px"/></div>
-                    <div class="card__title">
-                      <div class="card__title--log">Kaspersky</div>
-                      <p>Internet Security
-                      </p>
-                      <div class="row align-left">
-                        <div class="card__img-wrapper stars-wrapper"><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/></div>
-                        <p class="card__reviews">1503 reviews</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="poduct-card__description">
-                  <div class="row align-left align-top">
-                    <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
-                    <p class="poduct-card__text">Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
-                    </p>
-                  </div>
-                  <div class="row align-left align-top">
-                    <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
-                    <p class="poduct-card__text">Includes Webcam Protection, Safe Money Browser &amp; free VPN
-                    </p>
-                  </div>
-                </div>
-                <div class="user-count">
-                  <p class="card__text--small">2 User accounts</p>
-                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
-                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="poduct-card__bottom text--center">
-                <div class="menu-plan">
-                  <div class="menu-plan__text text--left">Choose your plan:</div>
-                  <div class="row menu-plan__wrapper margin--center">
-                    <div class="row menu-plan__value no-mouse-event"></div>
-                    <ul class="menu-plan__list">
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">5 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="39.99">$39.99</div>
-                      </li>
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">4 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="29.99">$29.99</div>
-                      </li>
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">3 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="19.99">$19.99</div>
-                      </li>
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">2 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="9.99">$9.99</div>
-                      </li>
-                    </ul>
-                    <div class="arrow-select no-mouse-event"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
-                  </div>
-                </div>
-                <div class="poduct-card__prises">
-                  <p class="card__text--small card__text--margin">Protect more devices</p>
-                  <div class="poduct-card__discount-value"></div>
-                  <div class="row align-center poduct-card__prise--disabled">
-                    <div class="prise--disabled"></div>
-                    <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
-                      <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row align-center align-top poduct-card__prise--chosen"></div>
-                </div>
-                <button class="button__buy">Buy now</button>
-                <div class="row align-center checkbox-wrapper">
-                  <input class="poduct-card__checkbox checkbox--checked" type="checkbox" checked="checked"/>
-                  <label class="row align-center card__checkbox-lable">
-                    <p class="card__text--small">Auto Renewal</p>
-                    <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
-                      <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                      </p>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="poduct-card">
-              <div class="poduct-card__top">
-                <div class="poduct-card__heading">
-                  <div class="row align-left">
-                    <div class="card__img-wrapper"><img src="./img/icons/icon_internet_security_for_windows.svg" alt="icon_internet_security_for_windows.svg" width="70px"/></div>
-                    <div class="card__title">
-                      <div class="card__title--log">Kaspersky</div>
-                      <p>Internet Security
-                      </p>
-                      <div class="row align-left">
-                        <div class="card__img-wrapper stars-wrapper"><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/></div>
-                        <p class="card__reviews">1503 reviews</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="poduct-card__description">
-                  <div class="row align-left align-top">
-                    <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
-                    <p class="poduct-card__text">Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
-                    </p>
-                  </div>
-                  <div class="row align-left align-top">
-                    <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
-                    <p class="poduct-card__text">Includes Webcam Protection, Safe Money Browser &amp; free VPN
-                    </p>
-                  </div>
-                </div>
-                <div class="user-count">
-                  <p class="card__text--small">2 User accounts</p>
-                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
-                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="poduct-card__bottom text--center">
-                <div class="menu-plan">
-                  <div class="menu-plan__text text--left">Choose your plan:</div>
-                  <div class="row menu-plan__wrapper margin--center">
-                    <div class="row menu-plan__value no-mouse-event"></div>
-                    <ul class="menu-plan__list">
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">5 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="39.99">$39.99</div>
-                      </li>
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">4 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="29.99">$29.99</div>
-                      </li>
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">3 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="19.99">$19.99</div>
-                      </li>
-                      <li class="row align-left menu-plan__list-item">
-                        <div class="menu-plan__name">2 Devices, 1 Year</div>
-                        <div class="menu-plan__prise" data-prise="9.99">$9.99</div>
-                      </li>
-                    </ul>
-                    <div class="arrow-select no-mouse-event"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
-                  </div>
-                </div>
-                <div class="poduct-card__prises">
-                  <p class="card__text--small card__text--margin">Protect more devices</p>
-                  <div class="poduct-card__discount-value"></div>
-                  <div class="row align-center poduct-card__prise--disabled">
-                    <div class="prise--disabled"></div>
-                    <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
-                      <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row align-center align-top poduct-card__prise--chosen"></div>
-                </div>
-                <button class="button__buy">Buy now</button>
-                <div class="row align-center checkbox-wrapper">
-                  <input class="poduct-card__checkbox checkbox--checked" type="checkbox" checked="checked"/>
-                  <label class="row align-center card__checkbox-lable">
-                    <p class="card__text--small">Auto Renewal</p>
-                    <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
-                      <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                      </p>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
     </header>
+    <!-- Блок с карочками-->
+    <section class="poduct-cards">
+      <div class="container">
+        <div class="row align-center poduct-card__wrapper">
+          <!-- Карточка товара-->
+          <div class="poduct-card">
+            <!-- Верхняя часть карточки-->
+            <div class="poduct-card__top">
+              <div class="poduct-card__heading">
+                <div class="row align-left">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_internet_security_for_windows.svg" alt="icon_internet_security_for_windows.svg" width="70px"/></div>
+                  <div class="card__title">
+                    <div class="card__title--log">Kaspersky</div>
+                    <p>Internet Security
+                    </p>
+                    <div class="row align-left">
+                      <div class="card__img-wrapper stars-wrapper"><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star-half.svg" alt="img" width="14.98px"/></div>
+                      <p class="card__reviews">1503 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="poduct-card__description">
+                <div class="row align-left align-top">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
+                  <p class="poduct-card__text">Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
+                  </p>
+                </div>
+                <div class="row align-left align-top">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
+                  <p class="poduct-card__text">Includes Webcam Protection, Safe Money Browser &amp; free VPN
+                  </p>
+                </div>
+              </div>
+              <div class="user-count">
+                <p class="card__text--small">2 User accounts</p>
+                <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                  <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Нижняя часть карточки-->
+            <div class="poduct-card__bottom text--center">
+              <!-- Выпадающий список-->
+              <div class="menu-plan">
+                <div class="menu-plan__text text--left">Choose your plan:</div>
+                <div class="row menu-plan__wrapper margin--center">
+                  <div class="row menu-plan__value no-mouse-event"></div>
+                  <ul class="menu-plan__list">
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">5 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="39.99">$39.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">4 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="29.99">$29.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">3 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="19.99">$19.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">2 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="9.99">$9.99</div>
+                    </li>
+                  </ul>
+                  <div class="arrow-select no-mouse-event"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
+                </div>
+              </div>
+              <!-- Расчёт цены-->
+              <div class="poduct-card__prises">
+                <p class="card__text--small card__text--margin">Protect more devices</p>
+                <div class="poduct-card__discount-value"></div>
+                <div class="row align-center poduct-card__prise--disabled">
+                  <div class="prise--disabled"></div>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-center align-top poduct-card__prise--chosen"></div>
+              </div>
+              <button class="button__buy">Buy now</button>
+              <!-- Чек-бокс в карточке товара-->
+              <div class="row align-center checkbox-wrapper">
+                <input class="poduct-card__checkbox checkbox--checked" type="checkbox" checked="checked"/>
+                <label class="row align-center card__checkbox-lable">
+                  <p class="card__text--small">Auto Renewal</p>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Карточка товара-->
+          <div class="poduct-card poduct-card--best-choice">
+            <!-- Верхняя часть карточки-->
+            <div class="poduct-card__top">
+              <div class="poduct-card__heading">
+                <div class="row align-left">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_total_security.svg" alt="icon_total_security.svg" width="70px"/></div>
+                  <div class="card__title">
+                    <div class="card__title--log">Kaspersky</div>
+                    <p>Total Security
+                    </p>
+                    <div class="row align-left">
+                      <div class="card__img-wrapper stars-wrapper"><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star-half.svg" alt="img" width="14.98px"/></div>
+                      <p class="card__reviews">1503 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="poduct-card__description">
+                <div class="row align-left align-top">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
+                  <p class="poduct-card__text">Complete security &amp; privacy suite for PC, Mac &amp; Mobile
+                  </p>
+                </div>
+                <div class="row align-left align-top">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
+                  <p class="poduct-card__text">Includes Kaspersky Password Manager &amp; Kaspersky Safe Kids
+                  </p>
+                </div>
+              </div>
+              <div class="user-count">
+                <p class="card__text--small">2 User accounts</p>
+                <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                  <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Нижняя часть карточки-->
+            <div class="poduct-card__bottom text--center">
+              <!-- Выпадающий список-->
+              <div class="menu-plan">
+                <div class="menu-plan__text text--left">Choose your plan:</div>
+                <div class="row menu-plan__wrapper margin--center">
+                  <div class="row menu-plan__value no-mouse-event"></div>
+                  <ul class="menu-plan__list">
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">5 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="39.99">$39.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">4 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="29.99">$29.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">3 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="19.99">$19.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">2 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="9.99">$9.99</div>
+                    </li>
+                  </ul>
+                  <div class="arrow-select no-mouse-event"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
+                </div>
+              </div>
+              <!-- Расчёт цены-->
+              <div class="poduct-card__prises">
+                <p class="card__text--small card__text--margin">Protect more devices</p>
+                <div class="poduct-card__discount-value"></div>
+                <div class="row align-center poduct-card__prise--disabled">
+                  <div class="prise--disabled"></div>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-center align-top poduct-card__prise--chosen"></div>
+              </div>
+              <button class="button__buy">Buy now</button>
+              <!-- Чек-бокс в карточке товара-->
+              <div class="row align-center checkbox-wrapper">
+                <input class="poduct-card__checkbox checkbox--checked" type="checkbox" checked="checked"/>
+                <label class="row align-center card__checkbox-lable">
+                  <p class="card__text--small">Auto Renewal</p>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Карточка товара-->
+          <div class="poduct-card">
+            <!-- Верхняя часть карточки-->
+            <div class="poduct-card__top">
+              <div class="poduct-card__heading">
+                <div class="row align-left">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_cloud.svg" alt="icon_cloud.svg" width="70px"/></div>
+                  <div class="card__title">
+                    <div class="card__title--log">Kaspersky</div>
+                    <p>Security Cloud
+                    </p>
+                    <div class="row align-left">
+                      <div class="card__img-wrapper stars-wrapper"><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star.svg" alt="img" width="14.98px"/><img class="icon_star" src="./img/icons/icon_star-half.svg" alt="img" width="14.98px"/></div>
+                      <p class="card__reviews">1503 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="poduct-card__description">
+                <div class="row align-left align-top">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
+                  <p class="poduct-card__text">Check your online accounts for data leaks
+                  </p>
+                </div>
+                <div class="row align-left align-top">
+                  <div class="card__img-wrapper"><img src="./img/icons/icon_check.svg" alt="icon_check.svg" width="30px"/></div>
+                  <p class="poduct-card__text">Monitor your home Wi-Fi for intruders
+                  </p>
+                </div>
+              </div>
+              <div class="user-count">
+                <p class="card__text--small">2 User accounts</p>
+                <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                  <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Нижняя часть карточки-->
+            <div class="poduct-card__bottom text--center">
+              <!-- Выпадающий список-->
+              <div class="menu-plan">
+                <div class="menu-plan__text text--left">Choose your plan:</div>
+                <div class="row menu-plan__wrapper margin--center">
+                  <div class="row menu-plan__value no-mouse-event"></div>
+                  <ul class="menu-plan__list">
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">5 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="39.99">$39.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">4 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="29.99">$29.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">3 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="19.99">$19.99</div>
+                    </li>
+                    <li class="row align-left menu-plan__list-item">
+                      <div class="menu-plan__name">2 Devices, 1 Year</div>
+                      <div class="menu-plan__prise" data-prise="9.99">$9.99</div>
+                    </li>
+                  </ul>
+                  <div class="arrow-select no-mouse-event"><img src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px"/></div>
+                </div>
+              </div>
+              <!-- Расчёт цены-->
+              <div class="poduct-card__prises">
+                <p class="card__text--small card__text--margin">Protect more devices</p>
+                <div class="poduct-card__discount-value"></div>
+                <div class="row align-center poduct-card__prise--disabled">
+                  <div class="prise--disabled"></div>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-center align-top poduct-card__prise--chosen"></div>
+              </div>
+              <button class="button__buy">Buy now</button>
+              <!-- Чек-бокс в карточке товара-->
+              <div class="row align-center checkbox-wrapper">
+                <input class="poduct-card__checkbox checkbox--checked" type="checkbox" checked="checked"/>
+                <label class="row align-center card__checkbox-lable">
+                  <p class="card__text--small">Auto Renewal</p>
+                  <div class="tool-tip"><img src="./img/icons/icon_info.svg" alt="icon_info.svg"/>
+                    <p class="tool-tip__text">Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>

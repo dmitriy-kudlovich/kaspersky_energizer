@@ -1,18 +1,22 @@
 header.header
+    // Верхняя часть шапки
     section.header__top
         .container
             .row
+                // Логотип
                 a(href="https://www.kaspersky.ru/" target="_blank").logo kaspersky
+                // Выпадающее меню для выбора валюты
                 .currency-menu
-                    .row
-                        .currency-menu__value GBP
+                    .row.block--active
+                        .currency-menu__value.block--active GBP
                         .arrow-select
-                            img(src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px")
+                            img(src="./img/icons/icon_arrow.svg" alt="icon_arrow" width="9.6px" height="6px").block--active
                         ul.currency-menu__list
                             li.currency-menu__item GBP
                             li.currency-menu__item USD
                             li.currency-menu__item EUR
                             li.currency-menu__item RUR
+    // Блок шапки с текстом
     section.header__main
         .container
             .img-wrapper
@@ -24,8 +28,8 @@ header.header
                     | Energizer
                     span.logo--reg
                         sub &reg;
-            article.header__article
-                h3.article__heading
+            .header__desc
+                h3.desc__heading
                     | Enjoy 20$ free and save up to 60%
                     br
                     | on your online security
@@ -36,67 +40,3 @@ header.header
                 p.header__text Select the solution that fits best your needs, click on “Buy now”, fill in your personal code received by email in the cart, your discount will apply.
 
                 a(href="#!").link--green Terms &amp; Conditions
-
-    section.poduct-cards
-        .container
-            .row.align-center
-                .poduct-card
-                    .poduct-card__top
-                        .poduct-card__heading
-                            .row.align-left
-                                +card-icon('icon_internet_security_for_windows.svg', '70px')
-                                +card-title
-                                    | Internet Security
-                        .poduct-card__description
-                            +card-description
-                                | Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
-                            +card-description
-                                | Includes Webcam Protection, Safe Money Browser &amp; free VPN
-                        +card-user-count(2)
-                    .poduct-card__bottom.text--center
-                        +card-plan-list
-                        .poduct-card__prises
-                            p.card__text--small.card__text--margin Protect more devices
-                            .poduct-card__discount-value
-                            .row.align-center.poduct-card__prise--disabled
-                                .prise--disabled
-                                +card-tool-tip
-                                    | Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                            .row.align-center.align-top.poduct-card__prise--chosen
-                        button.button__buy Buy now
-                        .row.align-center.checkbox-wrapper
-                            input(type="checkbox" checked).poduct-card__checkbox.checkbox--checked
-                            label.row.align-center.card__checkbox-lable
-                                p.card__text--small Auto Renewal
-                                +card-tool-tip
-                                    | Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                .poduct-card
-                    .poduct-card__top
-                        .poduct-card__heading
-                            .row.align-left
-                                +card-icon('icon_internet_security_for_windows.svg', '70px')
-                                +card-title
-                                    | Internet Security
-                        .poduct-card__description
-                            +card-description
-                                | Advanced antivirus &amp; privacy protection for PC, Mac &amp; Mobile
-                            +card-description
-                                | Includes Webcam Protection, Safe Money Browser &amp; free VPN
-                        +card-user-count(2)
-                    .poduct-card__bottom.text--center
-                        +card-plan-list
-                        .poduct-card__prises
-                            p.card__text--small.card__text--margin Protect more devices
-                            .poduct-card__discount-value
-                            .row.align-center.poduct-card__prise--disabled
-                                .prise--disabled
-                                +card-tool-tip
-                                    | Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.
-                            .row.align-center.align-top.poduct-card__prise--chosen
-                        button.button__buy Buy now
-                        .row.align-center.checkbox-wrapper
-                            input(type="checkbox" checked).poduct-card__checkbox.checkbox--checked
-                            label.row.align-center.card__checkbox-lable
-                                p.card__text--small Auto Renewal
-                                +card-tool-tip
-                                    | Lorem ipsum dolor sit amet, consectetur elit adipiscing elit elit elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur.

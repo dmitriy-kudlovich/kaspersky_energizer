@@ -65,27 +65,6 @@ input {
 
 /* // Cтили, заданные по умолчанию */
 
-.header__article {
-  width: 765px;
-}
-
-.article__heading {
-  position: relative;
-  margin-bottom: 40px;
-  font-size: 40px;
-  color: #1d1d1b;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 54px;
-    height: 2px;
-    bottom: -30px;
-    left: 0;
-    background-color: #444444;
-  }
-}
-
 .link--green {
   color: #00a88e;
   border-bottom: 1px solid #00a88e;
@@ -95,4 +74,3 @@ input {
     text-shadow: 0px 0px 14px rgba(0, 168, 142, 1);
   }
 }
-

@@ -7,13 +7,7 @@
   padding: 10px 0 10px 0;
   font-size: 14px;
   font-weight: 700;
-
-  &:hover {
-    cursor: pointer;
-    .currency-menu__list {
-      display: flex;
-    }
-  }
+  cursor: pointer;
 }
 
 .currency-menu__value {
@@ -22,19 +16,20 @@
 }
 
 .currency-menu__list {
-  display: none;
-  align-items: center;
   position: absolute;
-  left: -158px;
-  width: 158px;
+  display: none;
+  left: -5px;
+  top: 96%;
 }
 
 .currency-menu__item {
   position: relative;
   padding: 5px;
-  color: #444444;
   font-size: 14px;
   font-family: "Kaspersky Sans";
+  color: #444444;
+  background-color: #fff;
+  border-top: 1px solid #f2f2f2;
   transition: all 0.2s ease-in;
 
   &::after {

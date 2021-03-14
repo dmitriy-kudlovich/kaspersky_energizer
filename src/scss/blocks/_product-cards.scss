@@ -1,14 +1,24 @@
+.poduct-card__wrapper {
+  transform: translateY(-106px);
+}
+
 .poduct-card {
+  position: relative;
+  margin-right: 40px;
   width: 350px;
   height: 746px;
   box-shadow: 0px 8.48242px 25.4473px rgba(29, 29, 27, 0.24);
   border-radius: 4.24121px;
-
   color: #1d1d1b;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .poduct-card__top {
   padding: 25px 15px;
+  background-color: #fff;
 }
 
 .poduct-card__heading {
@@ -69,4 +79,27 @@
 .poduct-card__bottom {
   padding: 14px 19px 48px 19px;
   background-color: #f2f2f2;
+}
+
+.poduct-card--best-choice {
+  transform: translateY(-40px);
+  z-index: 3;
+
+  &::before {
+    position: absolute;
+    content: url(../img/icons/icon_best-choice.svg);
+    bottom: 95.5%;
+    left: -11px;
+    width: 175px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "BEST CHOICE";
+    bottom: 95.5%;
+    left: 13px;
+    top: -13px;
+    font-size: 18px;
+    color: #1d1d1b;
+  }
 }

@@ -1,5 +1,7 @@
 // Выбор валюты
+const currencyMenu = document.querySelector(".currency-menu");
 const currencyValue = document.querySelector(".currency-menu__value");
+const currencyMenuList = document.querySelector(".currency-menu__list");
 const currency = document.querySelectorAll(".currency-menu__item");
 
 // Выбор плана подписки
@@ -33,25 +35,45 @@ const cardCheckBoxes = document.querySelectorAll(".poduct-card__checkbox");
 const cardCheckBoxesLabels = document.querySelectorAll(".card__checkbox-lable");
 
 // Функция выбора значений из списка валюты
-function menuList(value, listItem) {
-  listItem.forEach((item) => {
-    item.addEventListener("click", () => {
-      value.innerHTML = item.innerHTML;
+function menuListActive() {
+  currencyMenu.addEventListener("click", () => {
+    currencyMenuList.classList.toggle("list--active");
+
+    html.addEventListener("click", (event) => {
+      if (
+        !event.target.classList.contains("currency-menu") &&
+        !event.target.classList.contains("block--active")
+      ) {
+        currencyMenuList.classList.remove("list--active");
+      }
     });
   });
 }
-menuList(currencyValue, currency);
+menuListActive();
+function menuList() {
+  currency.forEach((item) => {
+    item.addEventListener("click", (event) => {
+      currencyValue.innerHTML = item.innerHTML;
+    });
+  });
+}
+menuList();
 
-// Присвоение data-атрибута каждому выпадающему списку цен
+// Присвоение data-атрибута каждому выпадающему списку цен (чтобы отдельно для каждого списка можно выбирать свои значения)
 for (let i = 0; i < planList.length; i++) {
   planList[i].setAttribute("data-counter", i);
 }
 
-// Функция выпадающего меню плана
+// При нажатии появляется выпадающий список с ценами
 function planListActive() {
   planButton.forEach((item, index) => {
     item.addEventListener("click", () => {
-      planList[index].classList.toggle("list--active");
+      // Для того, чтобы показывать только один выбранный список с ценами
+      planList.forEach((item) => {
+        item.classList.remove("list--active");
+      });
+
+      planList[index].classList.add("list--active");
     });
 
     html.addEventListener("click", (event) => {
@@ -61,8 +83,6 @@ function planListActive() {
         });
       }
     });
-
-    
   });
 }
 planListActive();
