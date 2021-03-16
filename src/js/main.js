@@ -66,14 +66,22 @@ for (let i = 0; i < planList.length; i++) {
 
 // При нажатии появляется выпадающий список с ценами
 function planListActive() {
-  planButton.forEach((item, index) => {
+  planButton.forEach((item) => {
     item.addEventListener("click", () => {
       // Для того, чтобы показывать только один выбранный список с ценами
-      planList.forEach((item) => {
-        item.classList.remove("list--active");
+      planButton.forEach((item) => {
+        item.removeAttribute("data--active");
       });
+      item.setAttribute("data--active", "active");
 
-      planList[index].classList.add("list--active");
+      // Проверка: если есть атрибут data--active, то переключаем выпадающий список, если нет, - выпдающий список исчезает
+      planButton.forEach((item, index) => {
+        if (!item.hasAttribute("data--active")) {
+          planList[index].classList.remove("list--active");
+        } else {
+          planList[index].classList.toggle("list--active");
+        }
+      });
     });
 
     html.addEventListener("click", (event) => {
